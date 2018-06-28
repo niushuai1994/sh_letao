@@ -9,7 +9,7 @@ if (location.href.indexOf('login.html') === -1){
     url:'/employee/checkRootLogin',
     dataType:'json',
     success: function (info){
-      console.log(info);
+      //console.log(info);
       if(info.error === 400) {
         // 当前用户没登录,拦截到登录页
         location.href = "login.html"
